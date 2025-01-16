@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Feedback-Project</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <div class="card" id="card1">
+        <div class="header">
+            <h1 class="h1">Question 1 </h1>
+            <button class="question"><i class='bx bx-question-mark'></i></button>
+        </div>
+        <p class="paragraph1">How satisfied are you after using the 
+            <br>product for that long? <span class="red">*</span>
+        </p>
+<div class="numbers">
+    <button class="btn" onclick="rate(1)">1</button>
+    <button class="btn" onclick="rate(2)">2</button>
+    <button class="btn" onclick="rate(3)">3</button>
+    <button class="btn" onclick="rate(4)">4</button>
+    <button class="btn" onclick="(5)">5</button>
+</div>
+<div class="satisfied">
+    <p class="Not" id="not-satisfied">Not satisfied</p>
+    
+     <p class="very" id="very-satisfied">satisfied</p>
+    </div>
+    <button class="button"id="nextBtn" onclick="nextCard()"><i class='bx bxs-skip-next-circle'></i></button>
+</div>
+
+ <div class="card" id="card2">
+    <div class="header">
+        <h1 class="h1">Question 2 </h1>
+        <button class="question"><i class='bx bx-question-mark'></i></button>
+    </div>
+    <p class="paragraph1">How would you rate this product? <span class="red">*</span></p>
+    <div class="emojis">
+         <button class="btn1" onclick="showNextBtn()">😢</button> 
+         <button class="btn1" onclick="showNextBtn()">😐</button>
+          <button class="btn1" onclick="showNextBtn()">😊</button> 
+          <button class="btn1"onclick="showNextBtn()">😀</button> 
+          <button class="btn1"onclick="showNextBtn()">😁</button> 
+        
+        </div>
+        <br>
+        <div class="buttons">
+            <button class="previous" id="prevBtn" onclick="prevBtn()"><i class='bx bxs-skip-previous-circle'></i></button>
+            <button class="button2"id="nextBtn" onclick="nextCard1()"><i class='bx bxs-skip-next-circle'></i></button>
+        </div>
+       
+          
+
+</div>
+<div class="card" id="card3">
+    <div class="header">
+        <h1 class="h1">Question 3 </h1>
+        <button class="question"><i class='bx bx-question-mark'></i></button>
+    </div> 
+    <p class="paragraph1">What are you reasons for 
+         cancelling the service?
+        <span class="red">*</span></p>
+        <div class="checkbox">
+            <label><input type="checkbox"> Dont need it right now</label>
+            <label><input type="checkbox"> Wasnt useful to me</label>
+            <label><input type="checkbox"> Too expensive</label>
+            <label><input type="checkbox">Other</label>
+        </div>
+        <div class="buttons">
+            <button class="previous" id="prevBtn" onclick="prevBtn1()"><i class='bx bxs-skip-previous-circle'></i></button>
+            <button class="button3"id="nextBtn" onclick="nextCard2()"><i class='bx bxs-skip-next-circle'></i></button>
+        </div>
+</div>
+</body>
+<script src='main.js'></script>
+</html>
